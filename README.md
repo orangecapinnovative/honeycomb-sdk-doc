@@ -19,9 +19,9 @@ In your payment flow, find the final page that a user will land into after payme
 
     <script>
     	window.honeycombAffiliate.purchased({
-	    	reference_number: '',
-	    	total_price: 0,
-	    	items: [],
+	    reference_number: '',
+	    total_price: 0,
+	    items: [],
     	});
     </script>
 
