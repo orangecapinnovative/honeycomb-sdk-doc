@@ -18,11 +18,11 @@ This snippet will initialize the HoneyComb SDK and will track, manage Affiliate 
 In your payment flow, find the final page that a user will land into after payment is confirmed. On that page, place this snippet in your `<body>` tag.
 
     <script>
-    	window.honeycombAffiliate.purchased({
-	    reference_number: '',
-	    total_price: 0,
-	    items: [],
-    	});
+      window.honeycombAffiliate.purchased({
+		reference_number: '',
+		total_price: 0,
+		items: [],
+	  });
     </script>
 
 If you have the purchase detail you can fill in the data passed into purchased function **but it works totally fine with the data similar to the example!**
