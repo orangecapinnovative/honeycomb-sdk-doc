@@ -9,6 +9,9 @@ This guide explains how to encrypt JSON data using **AES-GCM-256** before sendin
 4. Encrypt the **JSON string** using **AES-256-GCM**.
 5. Extract the **authentication tag**.
 6. Encode the **encrypted data, IV, and authentication tag** in Base64.
+7. Then the function will return **encrypted data, IV, and authentication tag**. 
+
+To summarize the flow of the function, this encryption function takes **JSON data** and **API Key** as inputs, and return **encrypted data, IV, and authentication tag** in Base64 format as outputs.
 
 ## Node.js (TypeScript) Example
 
@@ -60,5 +63,3 @@ try {
   console.error("Encryption Error:", error.message);
 }
 ```
-
-Using the encryption function will get you **encoded data**, **iv**, and **authTag** which are required to send to the HoneyComb API.
