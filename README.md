@@ -37,8 +37,22 @@ Here are the variable types for the object.
 **Item** data type
 | Name | Type |
 |--|--|
-| reference_number | string |
 | name | string |
 | quantity | number |
 | sku | string |
 | price | number |
+
+## Get current tracking information
+    <script>
+      window.honeycombAffiliate.getTracking();
+    </script>
+
+By calling `getTracking` function. You will get all the tracking information that is applied to current session.
+
+| Name | Type |
+|--|--|
+| affiliateId | string |
+| expireDate | Date |
+| landingUrl | string |
+| sessionId | string (UUID) |
+| utmContent | string |
