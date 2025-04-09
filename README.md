@@ -42,7 +42,7 @@ Here are the variable types for the object.
 | sku | string |
 | price | number |
 
-## Get current tracking information
+## Get current tracking information (Developing)
     <script>
       window.honeycombAffiliate.getTracking();
     </script>
