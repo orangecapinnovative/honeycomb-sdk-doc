@@ -5,12 +5,14 @@ This guide will walk you through how to set up a basic usage of HoneyComb SDK Sc
 
 Replace {SDK URL} with the URL you receive. Then paste this snippet into your `<body>` tag. Ensure this runs on all pages.
 
-    <!-- Load JavaScript SDK -->
-    <script src="{SDK URL}"></script>
-    <script>
-      // Initialize Script
-      window.honeycombAffiliate.initializeSDK();
-    </script>
+```html
+<!-- Load JavaScript SDK -->
+<script src="{SDK URL}"></script>
+<script>
+  // Initialize Script
+  window.honeycombAffiliate.initializeSDK();
+</script>
+```
 This snippet will initialize the HoneyComb SDK and track and manage Affiliate info.
 
 ## Event Tracking (Funnel)
