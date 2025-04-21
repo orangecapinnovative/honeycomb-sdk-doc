@@ -3,14 +3,14 @@ This guide will walk you through how to set up a basic usage of HoneyComb SDK Sc
 
 ## Installation
 
-Replace {SDK URL} with the URL you receive. Then paste this snippet into your `<body>` tag. Ensure this runs on all pages.
+Replace {SDK URL} and {CLIENT_ID} with the URL and CLIENT_ID you receive respectively. Then paste this snippet into your `<body>` tag. Ensure this runs on all pages.
 
 ```html
 <!-- Load JavaScript SDK -->
 <script src="{SDK URL}"></script>
 <script>
   // Initialize Script
-  window.honeycombAffiliate.initializeSDK();
+  window.honeycombAffiliate.initializeSDK({CLIENT_ID});
 </script>
 ```
 This snippet will initialize the HoneyComb SDK and track and manage Affiliate info.
@@ -35,7 +35,7 @@ If your website is using the SPA (Single Page Application) or similar tech stack
 Call this function where the `Add to Cart` action happens.
 
 ```jsx
-window.honeycombAffiliate.addToCart(**items**);
+window.honeycombAffiliate.addToCart(items);
 ```
 
 Where `items` is **an array of an item object** with a structure like this. All fields are required.
