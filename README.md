@@ -99,6 +99,7 @@ By calling `getTracking` function. You will get all the tracking information tha
 
 | Name | Type |
 |--|--|
+| clientId | string |
 | affiliateId | string |
 | expireDate | Date |
 | landingUrl | string |
